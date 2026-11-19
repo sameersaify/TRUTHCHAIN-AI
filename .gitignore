@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+*.~*~
+node_modules/
+.next/
+artifacts/
+cache/
+typechain-types/
+.env
+.env.*
+!.env.example
+backend/data/*.db
