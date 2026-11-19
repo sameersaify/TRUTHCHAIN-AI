@@ -25,7 +25,7 @@ export default function Home() {
         <div className="mt-7 flex flex-wrap items-center gap-3">
           <Link href="/detector" className="btn-primary">Scan an image</Link>
           <Link href="/verify" className="btn-ghost">Verify a certificate</Link>
-          <span className="text-sm text-muted" role="status">{status}</span>
+          
         </div>
       </section>
 
