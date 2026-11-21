@@ -1,6 +1,9 @@
 """Real AI image detection using Smaug."""
 
-import io from functools import lru_cache
+"""Real AI image detection using Smaug."""
+
+import io
+from functools import lru_cache
 
 from PIL import Image, ImageOps
 from huggingface_hub import snapshot_download
