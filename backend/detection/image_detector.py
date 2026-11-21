@@ -1,7 +1,6 @@
 """Real AI image detection using Smaug."""
 
-import io
-from functools import lru_cache
+import io from functools import lru_cache
 
 from PIL import Image, ImageOps
 from huggingface_hub import snapshot_download
@@ -46,7 +45,7 @@ def analyze_image(data: bytes, file_hash_hex: str) -> dict:
 
     with Image.open(io.BytesIO(data)) as img:
         image = ImageOps.exif_transpose(img).convert("RGB")
-        score = detector(image)
+        score = detector(image, crops=1)
 
     raw_score = float(score)
 
